@@ -5,7 +5,7 @@
 🏠	  Santo Estêvão - BA
 📞	  (75) 99179-0787
 ✉️	  samuel.f2@hotmail.com
-(https://img.icons8.com/?size=100&id=62856&format=png&color=000000)	  linkedin.com/in/samuel-souzaa/
+	  linkedin.com/in/samuel-souzaa/
 	  github.com/samuellsouza/
 
 ## RESUMO PROFISSIONAL
@@ -41,12 +41,8 @@ Principais responsabilidades:
 - Monitoramento: Zabbix, Observium, The Dude, Grafana
 - Fibra Óptica: FTTH, GPON, EPON
 
-## CERTIFICAÇÕES E QUALIFICAÇÕES
-
-**2024**
+## CERTIFICADO E QUALIFICAÇÕES
 - Fundamentos em Tecnologia e Computação na Nuvem (Escola da Nuvem)
-
-**2023**
 - Linux System Administrator (4Linux)
 - Linux Completo (Udemy)
 - Gestão de Infraestrutura de TI (FIAP EaD)
@@ -55,11 +51,11 @@ Principais responsabilidades:
 - Controle de Anomalias e Bloqueio de Ataques em Redes (NIC.BR)
 - Automação de Serviços com Python (NIC.BR)
 
-**Certificações Cisco**
+**Certificado Cisco**
 - CCNAv7: Introdução às Redes
 - CCNAv7: Enterprise Networking, Security, and Automation
 
-**Certificações Específicas**
+**Certificado Específicas**
 - MTCNA, MTCRE (Mikrotik)
 - Certified OTDR Testing Analyst
 - Qualificação em Projetos FTTH e Documentação de Redes
@@ -70,4 +66,7 @@ Principais responsabilidades:
 - Espanhol: Técnico
 
 ## INFORMAÇÕES ADICIONAIS
-**Interesses**: Programação, Música, Academia, Desenvolvimento Profissional Contínuo
+-	Amante da Música, vinho e cerveja
+-	Desenvolvimento pessoal
+-	viajar
+-	Liberdade
