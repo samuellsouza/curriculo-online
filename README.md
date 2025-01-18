@@ -1,5 +1,12 @@
 # SAMUEL CONCEIÇÃO DE SOUZA
-**Analista de Redes e Desenvolvedor de Sistemas**
+**Tecnólogo | Analista de Redes e Desenvolvedor de Sistemas**
+
+# CONTATOS
+🏠	  Santo Estêvão - BA
+📞	  (75) 99179-0787
+✉️	  samuel.f2@hotmail.com
+(https://img.icons8.com/?size=100&id=62856&format=png&color=000000)	  linkedin.com/in/samuel-souzaa/
+	  github.com/samuellsouza/
 
 ## RESUMO PROFISSIONAL
 Profissional experiente em infraestrutura de redes e desenvolvimento de sistemas, com mais de 10 anos de experiência em coordenação de equipes NOC e projetos DevOps. Especialista em implementação e gerenciamento de redes, com forte conhecimento em múltiplas tecnologias e protocolos.
