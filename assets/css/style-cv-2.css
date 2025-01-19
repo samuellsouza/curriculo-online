@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
     line-height: 1.6;
     max-width: 900px;
     margin: 0 auto;
@@ -59,3 +68,12 @@ ul {
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 }
+
+#local-text, #linkedin-text, #github-text {
+    text-decoration: none;   
+}
+
+#none-text:hover {
+    color: #3498db;
+}
+
