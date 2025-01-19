@@ -5,8 +5,8 @@
 - 🏠 Santo Estêvão - BA
 - 📞 (75) 99179-0787
 - ✉️ samuel.f2@hotmail.com
--linkedin.com/in/samuel-souzaa/
--github.com/samuellsouza/
+- linkedin.com/in/samuel-souzaa/
+- github.com/samuellsouza/
 
 ## RESUMO PROFISSIONAL
 
