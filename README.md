@@ -7,6 +7,7 @@
 - ✉️ samuel.f2@hotmail.com
 - linkedin.com/in/samuel-souzaa/
 - github.com/samuellsouza/
+- Instagram | @shamwellsouza
 
 ## RESUMO PROFISSIONAL
 
