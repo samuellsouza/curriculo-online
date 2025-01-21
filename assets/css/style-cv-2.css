@@ -51,6 +51,7 @@ h2 {
 ul {
     list-style-type: square;
     padding-left: 20px;
+    
 }
 
 .competencias {
@@ -70,16 +71,39 @@ ul {
 }
 
 #local-text, #linkedin-text, #github-text {
-    text-decoration: none;   
+    text-decoration: none;
+    color: #333;
+    
 }
 
 #none-text:hover {
-    color: #3498db;
+    color: #3498db;    
 }
 
-.volta {
+#local-text:hover {
+    color: #3498db;    
+}
+
+#none-text {
+    color: #333;
+    
+}
+
+.copy {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.volta-1 {
+	color: #333;
+	padding: 10px;
+}
+
+.centralizar {
     text-align: center;
-}
-
-
+    margin: auto;
+  }
 
