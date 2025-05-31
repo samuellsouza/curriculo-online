@@ -8,12 +8,14 @@
     font-family: "Roboto", serif;
 }
 
-body {
+main {
     line-height: 1.6;
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
     color: #333;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 0 0 10px 10px;
 }
 
 h1 {
@@ -98,7 +100,6 @@ ul {
 	color: #fff;
 	padding: 20px;
 	text-align: center;
-	margin-top: 50px;
 }
 
 .volta-1 {
@@ -109,5 +110,6 @@ ul {
 .centralizar {
     text-align: center;
     margin: auto;
+    padding: 30px;
   }
 
