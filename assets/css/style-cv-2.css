@@ -1,11 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-*
-{
+:root {
+    --cor-texto: #333;
+    --cor-titulo: #2c3e50;
+    --cor-destaque: #3498db;
+    --cor-subtitulo: #2980b9;
+    --cor-cinza: #7f8c8d;
+    --cor-fundo-claro: #f8f9fa;
+    --cor-fundo-escuro: #333;
+    --sombra-suave: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    --raio-borda: 10px;
+    --transicao-padrao: 0.2s ease;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", serif;
+    font-family: "Roboto", sans-serif; /* "serif" como fallback conflita com uma fonte sans */
+}
+
+body {
+    background-color: #eef1f3; /* dá contraste ao "cartão" do main com box-shadow */
 }
 
 main {
@@ -13,26 +29,42 @@ main {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
-    color: #333;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    border-radius: 0 0 10px 10px;
+    color: var(--cor-texto);
+    background-color: #fff;
+    box-shadow: var(--sombra-suave);
+    border-radius: 0 0 var(--raio-borda) var(--raio-borda);
 }
 
 h1 {
-    color: #2c3e50;
-    border-bottom: 2px solid #3498db;
+    color: var(--cor-titulo);
+    border-bottom: 2px solid var(--cor-destaque);
     padding-bottom: 10px;
 }
 
 h2 {
-    color: #2980b9;
+    color: var(--cor-subtitulo);
     margin-top: 20px;
 }
 
+a {
+    text-decoration: none;
+    color: var(--cor-texto);
+}
+
+a:hover {
+    font-weight: bold;
+    color: var(--cor-destaque);
+}
+
+footer a {
+    color: var(--cor-destaque);
+}
+
 .resumo {
-    background-color: #f8f9fa;
+    background-color: var(--cor-fundo-claro);
     padding: 15px;
-    border-left: 4px solid #3498db;
+    border-left: 4px solid var(--cor-destaque);
+    border-radius: 0 6px 6px 0; /* combina com o border-left */
     margin: 20px 0;
 }
 
@@ -41,33 +73,34 @@ h2 {
 }
 
 .periodo {
-    color: #7f8c8d;
+    color: var(--cor-cinza);
     font-weight: bold;
 }
 
 .cargo {
     font-weight: bold;
-    color: #2c3e50;
+    color: var(--cor-titulo);
 }
 
 ul {
     list-style-type: square;
-    padding-left: 20px;    
+    padding-left: 20px;
 }
 
-.ponto{
+.ponto {
     list-style-type: none;
     padding: 0;
 }
 
-.competencias {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+.item-contato {
+    display: flex;
 }
 
-.certificacoes li {
-    margin-bottom: 10px;
+/* ---- Grids responsivos ---- */
+.competencias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 .idiomas {
@@ -76,40 +109,80 @@ ul {
     gap: 15px;
 }
 
-#local-text, #linkedin-text, #github-text {
-    text-decoration: none;
-    color: #333;
-    
+.certificacoes li {
+    margin-bottom: 10px;
 }
 
-#none-text:hover {
-    color: #3498db;    
-}
-
-#local-text:hover {
-    color: #3498db;    
-}
-
+/* ---- Links (unificados: antes havia regras duplicadas para #none-text) ---- */
+#local-text,
+#linkedin-text,
+#github-text,
 #none-text {
-    color: #333;
-    
+    text-decoration: none;
+    color: var(--cor-texto);
+    transition: color var(--transicao-padrao);
+}
+
+#local-text:hover,
+#linkedin-text:hover,
+#github-text:hover,
+#none-text:hover {
+    color: var(--cor-destaque);
+}
+
+/* acessibilidade: estado de foco visível para quem navega por teclado */
+#local-text:focus-visible,
+#linkedin-text:focus-visible,
+#github-text:focus-visible,
+#none-text:focus-visible {
+    outline: 2px solid var(--cor-destaque);
+    outline-offset: 2px;
 }
 
 .copy {
-	background-color: #333;
-	color: #fff;
-	padding: 20px;
-	text-align: center;
+    background-color: var(--cor-fundo-escuro);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
 .volta-1 {
-	color: #333;
-	padding: 10px;
+    color: var(--cor-texto);
+    padding: 10px;
 }
 
 .centralizar {
     text-align: center;
     margin: auto;
     padding: 30px;
-  }
+}
 
+/* ---- Responsividade ---- */
+@media (max-width: 700px) {
+    .competencias {
+        grid-template-columns: 1fr;
+    }
+    .idiomas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    main {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .idiomas {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ---- Impressão: útil para currículo ---- */
+@media print {
+    body {
+        background: none;
+    }
+    main {
+        box-shadow: none;
+        max-width: 100%;
+    }
+}
